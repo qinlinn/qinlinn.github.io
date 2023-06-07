@@ -1,25 +1,57 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2019-04-18T15:34:30-04:00
+title: "Leetcode 2040: Start My Coding Record from Binary Search and Array!"
+date: 2023-06-07T15:34:30-04:00
 categories:
-  - blog
+  - Leetcode
 tags:
-  - Jekyll
-  - update
+  - Binary Search
+  - Array
 ---
+2040. Kth Smallest Product of Two Sorted Arrays
+Hard
+Given two sorted 0-indexed integer arrays nums1 and nums2 as well as an integer k, return the kth (1-based) smallest product of nums1[i] * nums2[j] where 0 <= i < nums1.length and 0 <= j < nums2.length.
+ 
 
-You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Example 1:
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Input: nums1 = [2,5], nums2 = [3,4], k = 2
+Output: 8
+Explanation: The 2 smallest products are:
+- nums1[0] * nums2[0] = 2 * 3 = 6
+- nums1[0] * nums2[1] = 2 * 4 = 8
+The 2nd smallest product is 8.
+Example 2:
 
-Jekyll also offers powerful support for code snippets:
+Input: nums1 = [-4,-2,0,3], nums2 = [2,4], k = 6
+Output: 0
+Explanation: The 6 smallest products are:
+- nums1[0] * nums2[1] = (-4) * 4 = -16
+- nums1[0] * nums2[0] = (-4) * 2 = -8
+- nums1[1] * nums2[1] = (-2) * 4 = -8
+- nums1[1] * nums2[0] = (-2) * 2 = -4
+- nums1[2] * nums2[0] = 0 * 2 = 0
+- nums1[2] * nums2[1] = 0 * 4 = 0
+The 6th smallest product is 0.
+Example 3:
+
+Input: nums1 = [-2,-1,0,1,2], nums2 = [-3,-1,2,4,5], k = 3
+Output: -6
+Explanation: The 3 smallest products are:
+- nums1[0] * nums2[4] = (-2) * 5 = -10
+- nums1[0] * nums2[3] = (-2) * 4 = -8
+- nums1[4] * nums2[0] = 2 * (-3) = -6
+The 3rd smallest product is -6.
+ 
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 5 * 104
+-105 <= nums1[i], nums2[j] <= 105
+1 <= k <= nums1.length * nums2.length
+nums1 and nums2 are sorted.
 
 ```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+
 ```
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
