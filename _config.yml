@@ -28,8 +28,8 @@ search: true
 markdown: kramdown
 
 remote_theme: mmistakes/minimal-mistakes
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "air"
+
+# minimal_mistakes_skin: "air"
 
 # Outputting
 permalink: /:categories/:title/
