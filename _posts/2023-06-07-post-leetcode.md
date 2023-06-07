@@ -9,6 +9,8 @@ tags:
 
 ---
 
+
+
 **find kth smallest element of two sorted arrays: ** Given two arrays a and b, find the Kth smallest element of the two arrays. k is smaller than a.length + b.length{: .notice--primary}
  
 ```ruby
