@@ -27,7 +27,7 @@ search: true
 # Build settings
 markdown: kramdown
 
-remote_theme: mmistakes/minimal-mistakes
+theme: mmistakes/minimal-mistakes
 
 minimal_mistakes_skin: "air"
 
