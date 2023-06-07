@@ -26,7 +26,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: benbalter/retlab
+
 remote_theme: mmistakes/minimal-mistakes
 
 # Outputting
